@@ -20,17 +20,17 @@ AZUREUSER=`gethadmin`;
 PASSWD=`ChangeMe123!`;
 PASSPHRASE='ChangeMe123!';
 ARTIFACTS_URL_PREFIX=`$4`;
-NETWORK_ID=$5;
-MAX_PEERS=$6;
-NODE_TYPE=$7;       # (0=Transaction node; 1=Mining node )
-GETH_IPC_PORT=$8;
-NUM_BOOT_NODES=$9;
-NUM_MN_NODES=${10};
-MN_NODE_PREFIX=${11};
+NETWORK_ID=`15`;
+MAX_PEERS=`2`;
+NODE_TYPE=`0`;       # (0=Transaction node; 1=Mining node )
+GETH_IPC_PORT=`30303`;
+NUM_BOOT_NODES=`2`;
+NUM_MN_NODES=`2`;
+MN_NODE_PREFIX=`bcethcmep-mn`;
 MN_NODE_SEQNUM=${12};   #Only supplied for NODE_TYPE=1
-NUM_TX_NODES=${12};     #Only supplied for NODE_TYPE=0
-TX_NODE_PREFIX=${13};   #Only supplied for NODE_TYPE=0
-ADMIN_SITE_PORT=${14};  #Only supplied for NODE_TYPE=0
+NUM_TX_NODES=`1`;     #Only supplied for NODE_TYPE=0
+TX_NODE_PREFIX=`bcethcmep-tx`;   #Only supplied for NODE_TYPE=0
+ADMIN_SITE_PORT=`3000`;  #Only supplied for NODE_TYPE=0
 
 MINER_THREADS=1;
 # Difficulty constant represents ~15 sec. block generation for one node
