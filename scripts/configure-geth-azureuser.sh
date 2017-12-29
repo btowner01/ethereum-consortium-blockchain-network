@@ -16,10 +16,10 @@ date;
 # Validate that all arguments are supplied
 if [ $# -lt 10 ]; then unsuccessful_exit "Insufficient parameters supplied."; fi
 
-AZUREUSER=$1;
-PASSWD=$2;
-PASSPHRASE=$3;
-ARTIFACTS_URL_PREFIX=$4;
+AZUREUSER=`gethadmin`;
+PASSWD=`ChangeMe123!`;
+PASSPHRASE='ChangeMe123!';
+ARTIFACTS_URL_PREFIX=`$4`;
 NETWORK_ID=$5;
 MAX_PEERS=$6;
 NODE_TYPE=$7;       # (0=Transaction node; 1=Mining node )
